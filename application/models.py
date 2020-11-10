@@ -8,6 +8,7 @@ class Series(db.Model):
     seasons = db.Column(db.Integer, nullable=False)
 
 class Review(db.Model):
-    review_id = db.Column(db.Integer, primary_key=True, nullable=False)
+    reviewid = db.Column(db.Integer, primary_key=True, nullable=False)
     descrp = db.Column(db.String(300), nullable=False)
     rating = db.Column(db.Integer(5), nullable=False)
+    seriesid = db.Column(db.Integer, db.ForeignKey('Series.id'), nullable=False)
