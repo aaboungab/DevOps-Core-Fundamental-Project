@@ -43,7 +43,9 @@ def addReview():
     form = ReviewForm()
     if form.validate_on_submit():
         new_review = Review(desc=form.desc.data)
+        review_rating = Review(rating=form.rating.data)
         db.session.add(new_review)
+        db.session.add(review_rating)
         db.session.commit()
         return redirect(url_for('index'))
-    return render_template('addReview.html', form=form)
+    return render_template('addReview.html',form=form)

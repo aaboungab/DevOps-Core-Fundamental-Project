@@ -3,17 +3,22 @@
 
 <h2>Add your Review</h2>
 <br>
-    <form action='' method='POST' value style=" 
-						width: 500px;
-						height: 100px;">
+    <form action='' method='POST'>
         {{ form.hidden_tag() }}
-        {{ form.desc }} <br>
+        {{form.desc.label}} {{ form.desc }} <br>
         {% if form.desc.errors %}
             {% for error in form.desc.errors %}
                 {{ error }}<br>
             {% endfor %}
         {% endif %}
+
         {{ form.submit }}
     </form>
+
+    <form action='' method='POST'>
+	{{form.hidden_tag()}}
+        {{form.rating.label}} {{form.rating}}<br>
+	{{form.submit}}
+    </form> 
 {% endblock body_content %}
 
