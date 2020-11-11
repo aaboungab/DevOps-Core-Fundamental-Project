@@ -40,7 +40,7 @@ def delete(series_id):
 
 @app.route('/addReview', methods=['GET', 'Post'])
 def addReview():
-    form = ReviewForm
+    form = ReviewForm()
     if form.validate_on_submit():
         new_review = Review(desc=form.desc.data)
         db.session.add(new_review)

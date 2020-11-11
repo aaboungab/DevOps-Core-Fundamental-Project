@@ -18,17 +18,14 @@ class SeriesForm(FlaskForm):
     name = StringField('Name', 
 		validators=[
 			DataRequired(),
-			SeriesCheck(message='This Series already exsists')
-		]
-	)
-
+			SeriesCheck(message='This Series already exsists')])
     submit = SubmitField('Add Series')
 
 class ReviewForm(FlaskForm):
     desc = StringField('Review',
 		validators=[
-			DataRequired()
-		]
-	)
-
-    submit = SubmitField('Add a Review')
+			DataRequired()])
+    rating = SelectField('Ratings',
+		choices=[
+			('5'),('4'),('3'),('2'),('1'), ('0')])
+    submit = SubmitField('Add Review')

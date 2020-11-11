@@ -1,6 +1,11 @@
 {% extends 'layout.html' %}
 {% block body_content %}
-    <form action='' method='POST'>
+
+<h2>Add your Review</h2>
+<br>
+    <form action='' method='POST' value style=" 
+						width: 500px;
+						height: 100px;">
         {{ form.hidden_tag() }}
         {{ form.desc }} <br>
         {% if form.desc.errors %}
