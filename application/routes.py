@@ -48,4 +48,4 @@ def addReview():
         db.session.add(review_rating)
         db.session.commit()
         return redirect(url_for('index'))
-    return render_template('addReview.html',form=form)
+    return render_template('addReview.html', form=form)

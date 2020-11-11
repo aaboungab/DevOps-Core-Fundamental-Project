@@ -11,13 +11,12 @@
                 {{ error }}<br>
             {% endfor %}
         {% endif %}
-
-        {{ form.submit }}
+	{{ form.submit }}
     </form>
 
     <form action='' method='POST'>
 	{{form.hidden_tag()}}
-        {{form.rating.label}} {{form.rating}}<br>
+        {{form.rating.label}} {{form.rating}}<br><br><br>
 	{{form.submit}}
     </form> 
 {% endblock body_content %}

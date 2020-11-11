@@ -13,6 +13,10 @@
 	<button>Delete</button>
 </form>
 
-{% endfor %}
+<form method= '' action='{{ url_for('addReview', series_id=series.id)}}'>
+	<button>Add review</button>
+</form>
 
+
+{% endfor %}
 {% endblock body_content %}
