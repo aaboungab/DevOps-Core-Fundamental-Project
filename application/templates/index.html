@@ -1,8 +1,18 @@
 {% extends 'layout.html' %}
 {% block body_content %}
 
-	{% for review in all_reviews %}
-		{{ review }} <br>
-	{% endfor %}
+{% for series in all_series %}
+
+{{ series.name }} <br><br>
+
+<form method= '' action='{{ url_for('update', series_id=series.id)}}'>
+	<button>Update</button>
+</form>
+
+<form method='' action=' {{ url_for('delete', series_id=series.id)}}'>
+	<button>Delete</button>
+</form>
+
+{% endfor %}
 
 {% endblock body_content %}

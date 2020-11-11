@@ -7,6 +7,6 @@ class Series(db.Model):
 
 class Review(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    desc = db.Column(db.String(30), unique=True )
+    desc = db.Column(db.String(30))
     rating = db.Column(db.Integer)
     seriesid = db.Column(db.Integer, db.ForeignKey('series.id'))

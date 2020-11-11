@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block body_content %}
+    <form action='' method='POST'>
+        {{ form.hidden_tag() }}
+        {{ form.desc }} <br>
+        {% if form.desc.errors %}
+            {% for error in form.desc.errors %}
+                {{ error }}<br>
+            {% endfor %}
+        {% endif %}
+        {{ form.submit }}
+    </form>
+{% endblock body_content %}
+
