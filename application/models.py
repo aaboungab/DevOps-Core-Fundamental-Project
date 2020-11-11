@@ -3,8 +3,6 @@ from application import db
 class Series(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(30))
-    category = db.Column(db.String(30))
-    seasons = db.Column(db.Integer)
     revs = db.relationship('Review', backref='series')
 
 class Review(db.Model):
