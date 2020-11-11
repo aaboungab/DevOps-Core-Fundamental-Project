@@ -15,10 +15,10 @@ class SeriesCheck:
                 raise ValidationError(self.message)
 
 class SeriesForm(FlaskForm):
-    name = StringField('Name', 
+    name = StringField('Series name', 
 		validators=[
 			DataRequired(),
-			SeriesCheck(message='This Series already exsists')])
+			SeriesCheck(message='This series is listed on the homepage')])
     submit = SubmitField('Add Series')
 
 class ReviewForm(FlaskForm):
