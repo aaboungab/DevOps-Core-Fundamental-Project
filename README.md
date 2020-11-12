@@ -6,7 +6,7 @@
     - [Requirements](#requirements)
     - [Project Approach](#project-approach)
 - [Architecture](#architecture)
-    -[Entity Relationship Diagrams](#entity relationship diagrams)
+    - [Entity Relationship Diagrams](#entity relationship diagrams)
 - [Project Planning & User Stories](#project planning & user stories )
 
 
