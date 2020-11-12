@@ -2,11 +2,11 @@
 
 ## contents
 - [Brief](#brief)
-    - [Objective](#Objective)
-    - [Requirements](#Requirements)
+    - [Objective](#objective)
+    - [Requirements](#requirements)
     - [Project Approach](#project-approach)
 - [Architecture](#architecture)
-    -[Entity Relationship Diagrams](#Entity Relationship Diagrams)
+    -[Entity Relationship Diagrams](#entity relationship diagrams)
 - [Project Planning & User Stories](#project planning & user stories )
 
 
