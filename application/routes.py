@@ -54,4 +54,4 @@ def addReview(id):
 def Reviewpage(id):
     review_page = Review.query.filter_by(series_id=id).all()
     return render_template('Reviewpage.html', review_page=review_page)
-     
+

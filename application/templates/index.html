@@ -3,12 +3,12 @@
 
 {% for series in all_series %}
 
-{{ series.name }} <br><br>
+<h4>{{ series.name }}</h4>
 
 <form method= '' action='{{ url_for('update', id=series.id)}}'>
 	<button>Update</button>
 </form>
-
+ 
 <form method='' action=' {{ url_for('delete', id=series.id)}}'>
 	<button>Delete</button>
 </form>
@@ -16,7 +16,7 @@
 <form method= '' action='{{ url_for('addReview',id=series.id)}}'>
 	<button>Add review</button>
 </form>
-
+<br>
 
 {% endfor %}
 
