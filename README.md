@@ -8,7 +8,7 @@
 - [Architecture](#architecture)
     - [Entity Relationship Diagrams](#erd)
     - [CI Pipeline](#ci-pipeline)
-- [Project Planning & User Stories](#project planning & user stories )
+- [Project Planning & User Stories](#use_case)
 
 
 ## Breif
