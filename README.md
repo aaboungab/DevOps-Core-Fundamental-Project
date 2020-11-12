@@ -1,6 +1,6 @@
 # Series Review app
 
-## contents
+## Contents
 - [Brief](#brief)
     - [Objective](#objective)
     - [Requirements](#requirements)
@@ -9,6 +9,7 @@
     - [Entity Relationship Diagrams](#erd)
     - [CI Pipeline](#ci-pipeline)
 - [Project Planning & User Stories](#use_case)
+- [Risk Assessment](#risks)
 
 
 ## Breif
