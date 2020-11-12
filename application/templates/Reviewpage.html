@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+{% block body_content %}
+
+{% for review in review_page %}
+
+{{ review.series.name}}<br>
+<h4>{{ review.desc }} &nbsp; {{ review.rating }} </h4>
+
+
+
+{% endfor %}
+{% endblock body_content %}

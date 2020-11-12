@@ -10,7 +10,7 @@ def index():
     all_series = Series.query.all()
     return render_template('index.html', all_series=all_series)
 
-@app.route('/add', methods = ['GET', 'POST'])
+@app.route('/addSeries', methods = ['GET', 'POST'])
 def add():
     form = SeriesForm()
     if form.validate_on_submit():
@@ -20,31 +20,38 @@ def add():
         return redirect(url_for('index'))
     return render_template('addSeries.html', form=form)
 
-@app.route('/update/<int:series_id>', methods=['GET', 'POST'])
-def update(series_id):
+@app.route('/update/<int:id>', methods=['GET', 'POST'])
+def update(id):
     form = SeriesForm()
-    series_to_update = Series.query.get(series_id)
+    series_update = Series.query.get(id)
     if form.validate_on_submit():
-        series_to_update.name = form.name.data
+        series_update.name = form.name.data
         db.session.commit()
         return redirect(url_for('index'))
     return render_template('update.html', form=form)
 
 
-@app.route('/delete/<int:series_id>')
-def delete(series_id):
-    series_to_delete = Series.query.get(series_id)
-    db.session.delete(series_to_delete)
+@app.route('/delete/<int:id>')
+def delete(id):
+    series_delete = Series.query.get(id)
+    db.session.delete(series_delete)
     db.session.commit()
     return redirect(url_for('index'))
 
-@app.route('/addReview', methods=['GET', 'Post'])
-def addReview():
+@app.route('/addReview/<int:id>', methods=['GET', 'Post'])
+def addReview(id):
     form = ReviewForm()
     if form.validate_on_submit():
         new_review = Review(desc=form.desc.data,
-			rating=form.rating.data)
+			rating=form.rating.data,
+			series_id=id)
         db.session.add(new_review)
         db.session.commit()
-        return redirect(url_for('index'))
-    return render_template('addReview.html', form=form)
+        return redirect(url_for('Reviewpage', id=id))
+    return render_template('addReview.html', form=form, series = Series.query.get(id))
+
+@app.route('/Reviewpage/<int:id>', methods=['GET','POST'])
+def Reviewpage(id):
+    review_page = Review.query.filter_by(series_id=id).all()
+    return render_template('Reviewpage.html', review_page=review_page)
+     

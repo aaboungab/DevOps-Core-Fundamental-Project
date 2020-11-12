@@ -11,10 +11,7 @@
                 {{ error }}<br>
             {% endfor %}
         {% endif %}
-	{{ form.submit }}
-    </form>
 
-    <form action='' method='POST'>
 	{{form.hidden_tag()}}
         {{form.rating.label}} {{form.rating}}<br><br><br>
 	{{form.submit}}
