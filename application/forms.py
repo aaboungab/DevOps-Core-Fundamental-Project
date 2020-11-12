@@ -27,5 +27,5 @@ class ReviewForm(FlaskForm):
 			DataRequired()])
     rating = SelectField('Ratings',
 		choices=[
-			('Five','5'),('Four','4'),('Three','3'),('Two','2'),('One','1'), ('Zero','0')])
+			('5/5','5'),('4/5','4'),('3/5','3'),('2/5','2'),('1/5','1'), ('0/5','0')])
     submit = SubmitField('Add Review')

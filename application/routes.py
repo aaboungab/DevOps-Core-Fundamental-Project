@@ -20,10 +20,10 @@ def add():
         return redirect(url_for('index'))
     return render_template('addSeries.html', form=form)
 
-@app.route('/update/<int:id>', methods=['GET', 'POST'])
-def update(id):
+@app.route('/update/<int:idNum>', methods=['GET', 'POST'])
+def update(idNum):
     form = SeriesForm()
-    series_update = Series.query.get(id)
+    series_update = Series.query.get(idNum)
     if form.validate_on_submit():
         series_update.name = form.name.data
         db.session.commit()
@@ -31,27 +31,27 @@ def update(id):
     return render_template('update.html', form=form)
 
 
-@app.route('/delete/<int:id>')
-def delete(id):
-    series_delete = Series.query.get(id)
+@app.route('/delete/<int:idNum>')
+def delete(idNum):
+    series_delete = Series.query.get(idNum)
     db.session.delete(series_delete)
     db.session.commit()
     return redirect(url_for('index'))
 
-@app.route('/addReview/<int:id>', methods=['GET', 'Post'])
-def addReview(id):
+@app.route('/addReview/<int:idNum>', methods=['GET', 'Post'])
+def addReview(idNum):
     form = ReviewForm()
     if form.validate_on_submit():
         new_review = Review(desc=form.desc.data,
 			rating=form.rating.data,
-			series_id=id)
+			series_id=idNum)
         db.session.add(new_review)
         db.session.commit()
-        return redirect(url_for('Reviewpage', id=id))
-    return render_template('addReview.html', form=form, series = Series.query.get(id))
+        return redirect(url_for('Reviewpage', idNum=idNum))
+    return render_template('addReview.html', form=form, series = Series.query.get(idNum))
 
-@app.route('/Reviewpage/<int:id>', methods=['GET','POST'])
-def Reviewpage(id):
-    review_page = Review.query.filter_by(series_id=id).all()
+@app.route('/Reviewpage/<int:idNum>', methods=['GET','POST'])
+def Reviewpage(idNum):
+    review_page = Review.query.filter_by(series_id=idNum).all()
     return render_template('Reviewpage.html', review_page=review_page)
 

@@ -5,16 +5,20 @@
 
 <h4>{{ series.name }}</h4>
 
-<form method= '' action='{{ url_for('update', id=series.id)}}'>
+<form method= '' action='{{ url_for('update', idNum=series.id)}}'>
 	<button>Update</button>
 </form>
  
-<form method='' action=' {{ url_for('delete', id=series.id)}}'>
+<form method='' action=' {{ url_for('delete', idNum=series.id)}}'>
 	<button>Delete</button>
 </form>
 
-<form method= '' action='{{ url_for('addReview',id=series.id)}}'>
+<form method= '' action='{{ url_for('addReview',idNum=series.id)}}'>
 	<button>Add review</button>
+</form>
+
+<form method= '' action='{{ url_for('Reviewpage',idNum=series.id)}}'>
+        <button>View reviews</button>
 </form>
 <br>
 

@@ -1,10 +1,10 @@
 {% extends 'layout.html' %}
 {% block body_content %}
-
+<br>
 {% for review in review_page %}
-
-{{ review.series.name}}<br>
-<h4>{{ review.desc }} &nbsp; {{ review.rating }} </h4>
+<h3>{{ review.series.name}}</h3>
+<p>Summary: &nbsp;  &nbsp; &nbsp;{{ review.desc }} </p> 
+<p>Rating: &nbsp; &nbsp; &nbsp; &nbsp;{{ review.rating }}</p>
 
 
 
