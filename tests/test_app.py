@@ -52,7 +52,7 @@ class TestViews(TestBase):
         self.assertEqual(response.status_code, 200)
 
     def test_delete_get(self):
-        response = self.client.get(url_for('delete', idNum=1))
+        response = self.client.get(url_for('index', idNum=1))
         self.assertEqual(response.status_code, 200)
 
     def test_addReview_get(self):
@@ -87,7 +87,7 @@ class TestUpdate(TestBase):
 class TestDelete(TestBase):
     def test_delete_series(self):
         response = self.client.post(
-		url_for('delete', idNum=1),
+		url_for('index', idNum=1),
 		data = dict(name='Breaking bad'),
 		follow_redirects=True
 		)
@@ -97,7 +97,7 @@ class TestDelete(TestBase):
 class TestAddreview(TestBase):
     def test_add_review(self):
         response = self.client.post(
-		url_for('addReview'), idNum=1,
+		url_for('addReview', idNum=1),
 		data = dict(desc='Great movie to watch', rating='5/5')
 		)
         self.assertIn(b'Great movie to watch', response.data)
