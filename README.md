@@ -11,6 +11,11 @@
 - [Project Planning & User Stories](#use_case)
 - [Risk Assessment](#risks)
     - [Explanation](#risk-exp)
+- [Testing](#test_)
+- [Deployment](#depl)
+- [Technologies used](#tech)
+- [Front end Design](#FE)
+- [Future Improvements](#improve)
 
 <a name="breif"></a>
 ## Breif
@@ -106,7 +111,7 @@ I have thought of a number of risks that my project may face and have categorise
 | Potential release of data (eg account info, private IP addresses or environment variables) when uploading        |  Very Low     |    High       | [5 Click here](#data)
 
 <a name="risk-exp"></a>
-### Explanation
+### Risk Explanation
 <a name="plan"></a>
 #### Lack of clear planning
 Building of web app can get complex down the line as the code source increases.
@@ -117,6 +122,8 @@ Building of web app can get complex down the line as the code source increases.
 ##### Response 
 - Use of Jira to identify aim and be able to plan and track project progression
 ##### Revisit
+- 
+
 <a name="auto"></a>
 #### Automation not working and potentially causing issues
 Automation can save a lot of time and hussle if done right, however if not done properly it can have a:
@@ -129,6 +136,8 @@ Building of web app can get complex down the line as the code source increases.
 ##### Response 
 - Ensure automation learning through python is at a sufficient level to debug an issue I may face
 ##### Revisit
+- 
+
 <a name="dev"></a>
 #### Problems with the development of the project
 Development part of the project is the most critical stage, the risks of running into issue are:
@@ -139,6 +148,8 @@ Development part of the project is the most critical stage, the risks of running
 ##### Response 
 - Solving problems as and when they take place. Ensure that I follow project plan to make tracing back steps easier in the case of an issue 
 ##### Revisit
+- 
+
 <a name="gcp"></a>
 #### Have insufficient GCP Credit 
 Running out of GCP credit for this project is very unlikely, however if I do the risks are:
@@ -149,6 +160,8 @@ Running out of GCP credit for this project is very unlikely, however if I do the
 ##### Response 
 - I will ensure that all instances are stopped and only activated when needed to save compute resources
 ##### Revisit
+- 
+
 <a name="test"></a>
 #### Issues with the implementation of the tests 
 Risks of inadequate tests will result to:
@@ -159,6 +172,8 @@ Risks of inadequate tests will result to:
 ##### Response 
 - Ensure Unit testing learning is at a sufficient level to solve any implementation issues that may arise
 ##### Revisit
+- 
+
 <a name="vm"></a>
 #### Loss of data due to Server or VM being shutdown 
 Risks of GCP server shutting down will result to:
@@ -169,6 +184,8 @@ Risks of GCP server shutting down will result to:
 ##### Response 
 - Ensure that I push an changes made to the source code to GitHub, ensuring that my code is always backed up
 ##### Revisit
+- 
+
 <a name="data"></a>
 #### Potential release of data (eg account info, private IP addresses or environment variables) when uploading 
 It is likely that I will be working on different VM machines, hence there will be a public Git repo. Hence, it is very likely that I may upload some credentils by mistake the risks are:
@@ -179,4 +196,29 @@ It is likely that I will be working on different VM machines, hence there will b
 ##### Response 
 - Ensure that I do not make a sensitive information public on GitHub or elsewhere and always follow best practices
 ##### Revisit
+-
 
+<a name="test_"></a>
+## Testing 
+Testing has been done using pytest. The coverage report for the backend is __. 
+
+<a name="depl"></a>
+## Deployment
+
+<a name="tech"></a>
+### Technologies Used
+* Database: GCP SQL Server
+* Programming language: Python
+* Framework: Flask
+* Deployment: Gunicorn
+* CI Server: Jenkins
+* Test Reporting: Pytest, Selenium
+* VCS: [Git](https://github.com/aaboungab)
+* Project Tracking: [Trello](https://trello.com/b/siBc2gmV/fundamental-qa-project)
+* Live Environment: GCP
+
+<a name="FE"></a>
+## Front End Design
+
+<a name="improve"></a>
+## Improvements for the Future
