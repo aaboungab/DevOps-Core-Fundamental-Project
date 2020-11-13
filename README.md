@@ -115,6 +115,18 @@ Trello is a free and easy to use platform that creates Kanban boards. Below is a
 
 <img src="/Documentation/Use case Overview.png" alt="Usecase" width="100%" height="100%"/>
 
+### Use Stories Overview
+Below are entailed a series of user stories according to the planned uses for the application and their level of requirement according to a MoSCoW (Must, Shoud, Could, Would) scale
+
+|  | User Stories and their MoSCoW |
+| ------ | ------ |
+| MUST | As a user, I want to be able to access the app online |
+| MUST | As a user, I want to be able to create reviews on the app |
+| SHOULD | As a user, I want to be able to read reviews on the app |
+| SHOULD | As a user I want to be able to update my reviews on the app |
+| SHOULD | As a user I want to delete my reviews on the app |
+| COULD | As a user, I want to access the web on a mobile devices|
+
 
 <a name=risks></a>
 ## Risk Assessment
