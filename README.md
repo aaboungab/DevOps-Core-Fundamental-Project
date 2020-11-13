@@ -2,18 +2,20 @@
 
 ## Contents
 - [Brief](#brief)
-    - [Objective](#objective)
-    - [Requirements](#requirements)
-    - [Project Approach](#project-approach)
-- [Architecture](#architecture)
+    - [Objective](#obj)
+    - [Requirements](#reqs)
+    - [Project Approach](#approach)
+- [Architecture](#arch)
     - [Entity Relationship Diagrams](#erd)
-    - [CI Pipeline](#ci-pipeline)
+    - [CI Pipeline](#ci)
 - [Project Planning & User Stories](#use_case)
 - [Risk Assessment](#risks)
+    - [Explanation] (#risk-exp)
 
-
+<a name="breif"></a>
 ## Breif
 
+<a name="obj"></a>
 ### Objective
 The objective of the DevOps Core Fundamental Project is to create a CRUD application with utilisation of supporting tools,
 methodologies and technologies that encapsulate all core modules we have covered up until week 5 of the Training Academy.
@@ -29,6 +31,7 @@ Core concepts to involve:
 - **Cloud Fundamentals**
 - **Databases**
 
+<a name="reqs"></a>
 ### Requirements 
 - A Trello board (or equivalent Kanban board tech) with full expansion
 on user stories, use cases and tasks needed to complete the project.
@@ -52,6 +55,7 @@ reports and evidence to support a TDD approach.
 Feature-Branch model which will subsequently be built through a CI
 server and deployed to a cloud-based virtual machine.
 
+<a name="approach"></a>
 ### Project Approach
 My project focuses on creating a website where you can review a list of series that you may have watched for others to read. 
 This will consist of users being able to: 
@@ -64,7 +68,9 @@ This will consist of users being able to:
 - View and update series name 
 - Delete series and reviews
 
+<a name="arch"></a>
 ## Architecture
+<a name="erd"></a>
 ### Entity Relationship Diagrams (ERD)
 #### Plan
 
@@ -75,9 +81,102 @@ details, allowing anyone to Create, Read, Update and Delete from the database. R
 The inital plan for the ERD was consistent throughout the projects lifecycle and the project was delievered with the ERD shown below. No 
 changes were needed to be made to the database as all functionalty requirements were met. 
 
+<a name="ci"></a>
+### CI Pipeline
+
+<a name="use_case"></a>
 ## Project Planning & User Stories 
 
 For the project a tool called Trello is being used as a planning tool to keep track of tasks and update what needed to be done or has been completed.
 Trello is a free and easy to use platform that creates Kanban boards. Below is a screenshot of the Trello board and a link to the Trello board:
 
+<a name=risks></a>
+## Risk Assessment
+
+I have thought of a number of risks that my project may face and have categorised them below to analyse the risk, its impact, likelihood and the appropriate response to that risk. The risks can be seen as a combination of technical risks associate with the development side of the project and general risks that will directly or indirectly impact the project
+
+| Risks                            | Likelihood    | Impact       |    Explanation          |
+| -------------------------------- |:-------------:| :-----------:| -----------------------:|
+| Lack of clear planning           | Low           | High         | [1 Click here](#plan)
+|  Automation not working and potentially causing issues     | Medium        |   high     | [2 Click here](#auto)
+| Problems with the development of the project        | Medium        |  High        | [3 Click here](#dev)
+| Have insufficient GCP Credit   | Very Low     |    High | [4 Click here](#gcp)
+| Issues with the implementation of the tests        |  Medium     |    Medium       | [5 Click here](#test)
+| Loss of data due to Server or VM being shutdown   | Low     |    Medium | [4 Click here](#vm)
+| Potential release of data (eg account info, private IP addresses or environment variables) when uploading        |  Very Low     |    High       | [5 Click here](#data)
+
+<a name="risk-exp"></a>
+### Explanation
+<a name="plan"></a>
+#### Lack of clear planning
+Building of web app can get complex down the line as the code source increases.
+##### High impact
+- Lack of clear planning will result to the project failing overall
+##### Low Likelihood
+- Difficulty of structuring a project will still learning the fundamentals of programming and app development
+##### Response 
+- Use of Jira to identify aim and be able to plan and track project progression
+##### Revisit
+<a name="auto"></a>
+#### Automation not working and potentially causing issues
+Automation can save a lot of time and hussle if done right, however if not done properly it can have a:
+#### Lack of clear planning
+Building of web app can get complex down the line as the code source increases.
+##### High impact
+- Automation if not done right can slow development time
+##### Medium Likelihood
+- Due to my lack of experience I may write scripts that have many bugs and therefore needed to be fixed
+##### Response 
+- Ensure automation learning through python is at a sufficient level to debug an issue I may face
+##### Revisit
+<a name="dev"></a>
+#### Problems with the development of the project
+Development part of the project is the most critical stage, the risks of running into issue are:
+##### High impact
+- Development is what makes the project. Thus, any issues within development will hinder project progress
+##### Medium Likelihood
+- Due to my lack of experience in app development I may run into a few problems during the development phase
+##### Response 
+- Solving problems as and when they take place. Ensure that I follow project plan to make tracing back steps easier in the case of an issue 
+##### Revisit
+<a name="gcp"></a>
+#### Have insufficient GCP Credit 
+Running out of GCP credit for this project is very unlikely, however if I do the risks are:
+##### High impact
+- Running out of GCP credit if I leave multiple instances/databases up and running without stopping or deleting themprogress
+##### Very Low Likelihood
+- I start with $300 in free credit. If I am careful when using compute resources, I can make the credit last
+##### Response 
+- I will ensure that all instances are stopped and only activated when needed to save compute resources
+##### Revisit
+<a name="test"></a>
+#### Issues with the implementation of the tests 
+Risks of inadequate tests will result to:
+##### Medium impact
+- One of the most critical parts of the project. May lead to me overseeing any issues with the app. 
+##### Medium Likelihood
+- Issues may arise during the testing phase and when the tests are running alongside other services 
+##### Response 
+- Ensure Unit testing learning is at a sufficient level to solve any implementation issues that may arise
+##### Revisit
+<a name="vm"></a>
+#### Loss of data due to Server or VM being shutdown 
+Risks of GCP server shutting down will result to:
+##### Medium impact
+- The server/VM when shut down may cause downtime for the app
+##### Very Low Likelihood
+- The cloud provider is responsible for the upkeep of the servers/VMs. Unlikely to run into any issues 
+##### Response 
+- Ensure that I push an changes made to the source code to GitHub, ensuring that my code is always backed up
+##### Revisit
+<a name="data"></a>
+#### Potential release of data (eg account info, private IP addresses or environment variables) when uploading 
+It is likely that I will be working on different VM machines, hence there will be a public Git repo. Hence, it is very likely that I may upload some credentils by mistake the risks are:
+##### High impact
+- If I accidentally release/misplace data then anyone can use this to access and manipulate the application 
+##### Very Low Likelihood
+- Unlikely that this risk may occur as I will be responsible to ensure this does not happen. Low possibility that data will fall into the wrong hands
+##### Response 
+- Ensure that I do not make a sensitive information public on GitHub or elsewhere and always follow best practices
+##### Revisit
 
