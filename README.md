@@ -1,4 +1,6 @@
 # Series Review app
+# Author
+## Anas Aboungab
 
 ## Contents
 - [Brief](#brief)
@@ -307,6 +309,5 @@ Future improvements for the project would mostly be focused on the development s
 - Use of integrated testing in the future as some of the services cannot currently be tested or must be tested when run as a Flask app (without Docker/Jenkins) as this would make the app more stable.
 - Make my web app Mobile friendly, since most websites today are accessed over mobile
 
-# Author
-## Anas Aboungab
+
 
