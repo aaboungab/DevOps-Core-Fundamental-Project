@@ -12,9 +12,14 @@
 - [Risk Assessment](#risks)
     - [Explanation](#risk-exp)
 - [Testing](#test_)
+    - [Unit testing](#utest)
 - [Deployment](#depl)
 - [Technologies used](#tech)
 - [Front end Design](#FE)
+    - [Page: Home](#home)
+    - [Page: Add Series name](#addSN)
+    - [Page: Review Series](#revS)
+    - [Page: View Review](#virev)
 - [Future Improvements](#improve)
 
 <a name="breif"></a>
@@ -198,12 +203,15 @@ It is likely that I will be working on different VM machines, hence there will b
 ##### Revisit
 -
 
+
 <a name="test_"></a>
 ## Testing 
 Testing has been done using pytest. The coverage report for the backend is __. 
 
+
 <a name="depl"></a>
 ## Deployment
+
 
 <a name="tech"></a>
 ### Technologies Used
@@ -217,8 +225,24 @@ Testing has been done using pytest. The coverage report for the backend is __.
 * Project Tracking: [Trello](https://trello.com/b/siBc2gmV/fundamental-qa-project)
 * Live Environment: GCP
 
+
 <a name="FE"></a>
 ## Front End Design
+
+<a name="home"></a>
+### Home Page
+
+<a name="addSN"></a>
+### Add Series Name Page
+
+
+<a name="revS"></a>
+### Review Series Page
+
+
+<a name="virev"></a>
+### View Review Page 
+
 
 <a name="improve"></a>
 ## Improvements for the Future
