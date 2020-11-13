@@ -283,3 +283,13 @@ You can veiw reviews of each series by clicing  the view review button on the ho
 
 <a name="improve"></a>
 ## Improvements for the Future
+Future improvements for the project would mostly be focused on the development stage. As the source code grew for my application it became more difficult to navigate around and due to my lack of knowledge and experince it was hard to keep up. In the future I can: 
+
+- Seperate my routes.py file. Each route can be subdivided in their own category where Add review can be in its own file
+- The current state of the app is fairly simple, in the future I would hope to add more functionalities or more complex services to the ones already in place. I would also improve general layout/design of the .html pages by using CSS or Bootstrap
+- Use of integrated testing in the future as some of the services cannot currently be tested or must be tested when run as a Flask app (without Docker/Jenkins) as this would make the app more stable.
+- Make my web app Mobile friendly, since most websites today are accessed over mobile
+
+# Author
+## Anas Aboungab
+
