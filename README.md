@@ -10,7 +10,7 @@
     - [CI Pipeline](#ci)
 - [Project Planning & User Stories](#use_case)
 - [Risk Assessment](#risks)
-    - [Explanation] (#risk-exp)
+    - [Explanation](#risk-exp)
 
 <a name="breif"></a>
 ## Breif
