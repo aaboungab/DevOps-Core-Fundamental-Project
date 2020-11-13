@@ -89,7 +89,7 @@ details, allowing anyone to Create, Read, Update and Delete from the database. R
 1 series can have many reviews and 1 review cannot have many series attached to it. 
 
 
-<img src="/Documentation/ERD.png" alt="ERD" width="75%" height="75%"/>
+<img src="/Documentation/ERD.png" alt="ERD" width="100%" height="100%"/>
 
 
 The inital plan for the ERD was consistent throughout the projects lifecycle and the project was delievered with the ERD shown below. No 
@@ -106,11 +106,11 @@ Trello is a free and easy to use platform that creates Kanban boards. Below is a
 
 [Trello Board](https://trello.com/b/siBc2gmV/fundamental-qa-project)
 
-<img src="/Documentation/Trello Board.png" alt="Trello" width="75%" height="75%"/>
+<img src="/Documentation/Trello Board.png" alt="Trello" width="100%" height="100%"/>
 
 ### Use Case Overview
 
-<img src="/Documentation/Use case Overview.png" alt="Usecase" width="75%" height="75%"/>
+<img src="/Documentation/Use case Overview.png" alt="Usecase" width="100%" height="100%"/>
 
 
 <a name=risks></a>
@@ -244,17 +244,37 @@ Testing has been done using pytest. The coverage report for the backend is __.
 
 <a name="home"></a>
 ### Home Page
+clear home page consists of an Add series button and home button to redirect back to the homepage. 
+<img src="/Documentation/home.png" alt="Usecase" width="100%" height="100%"/>
+
 
 <a name="addSN"></a>
 ### Add Series Name Page
+Clicking on the Add a Series button you will be redirect to the Add series page. 
+<img src="/Documentation/Add a Series.png" alt="Usecase" width="100%" height="100%"/>
+
+#### Home page after Adding series name
+<img src="/Documentation/home-AddedSeries.png" alt="Usecase" width="100%" height="100%"/>
 
 
 <a name="revS"></a>
 ### Review Series Page
+#### Add review
+Add a review by clicking on the Add review button on the home page. That will then redirect you to the add review page:
+
+<img src="/Documentation/Add a review.png" alt="Usecase" width="100%" height="100%"/>
+
+After adding your review you will be automatically redirected to the Review page where you can view your review and other reviews on the specific series:
+
+<img src="/Documentation/viewreviewpage.png" alt="Usecase" width="100%" height="100%"/>
+
 
 
 <a name="virev"></a>
-### View Review Page 
+### View Review Page
+You can veiw reviews of each series by clicing  the view review button on the homepage:
+
+<img src="/Documentation/viewreview button.png" alt="Usecase" width="100%" height="100%"/>
 
 
 <a name="improve"></a>
