@@ -244,7 +244,7 @@ Testing has been done using pytest. The coverage report for the backend is __.
 
 <a name="home"></a>
 ### Home Page
-clear home page consists of an Add series button and home button to redirect back to the homepage. 
+Clear home page consists of an Add series button and home button to redirect back to the homepage. 
 <img src="/Documentation/home.png" alt="Usecase" width="100%" height="100%"/>
 
 
