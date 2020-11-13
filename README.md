@@ -123,7 +123,7 @@ I have thought of a number of risks that my project may face and have categorise
 
 | Risks                            | Likelihood    | Impact       |    Explanation          |
 | -------------------------------- |:-------------:| :-----------:| -----------------------:|
-| Lack of clear planning           | Low           | High         | [1 Click here](#plan)
+| Lack of clear planning           | Low           | High         | [1 Click here](#cplan)
 |  Automation not working and potentially causing issues     | Medium        |   high     | [2 Click here](#auto)
 | Problems with the development of the project        | Medium        |  High        | [3 Click here](#dev)
 | Have insufficient GCP Credit   | Very Low     |    High | [4 Click here](#gcp)
@@ -133,7 +133,8 @@ I have thought of a number of risks that my project may face and have categorise
 
 <a name="risk-exp"></a>
 ### Risk Explanation
-<a name="plan"></a>
+
+<a name="cplan"></a>
 #### Lack of clear planning
 Building of web app can get complex down the line as the code source increases.
 ##### High impact
@@ -145,11 +146,10 @@ Building of web app can get complex down the line as the code source increases.
 ##### Revisit
 - 
 
+
 <a name="auto"></a>
 #### Automation not working and potentially causing issues
 Automation can save a lot of time and hussle if done right, however if not done properly it can have a:
-#### Lack of clear planning
-Building of web app can get complex down the line as the code source increases.
 ##### High impact
 - Automation if not done right can slow development time
 ##### Medium Likelihood
@@ -158,6 +158,7 @@ Building of web app can get complex down the line as the code source increases.
 - Ensure automation learning through python is at a sufficient level to debug an issue I may face
 ##### Revisit
 - 
+
 
 <a name="dev"></a>
 #### Problems with the development of the project
@@ -171,6 +172,7 @@ Development part of the project is the most critical stage, the risks of running
 ##### Revisit
 - 
 
+
 <a name="gcp"></a>
 #### Have insufficient GCP Credit 
 Running out of GCP credit for this project is very unlikely, however if I do the risks are:
@@ -182,6 +184,7 @@ Running out of GCP credit for this project is very unlikely, however if I do the
 - I will ensure that all instances are stopped and only activated when needed to save compute resources
 ##### Revisit
 - 
+
 
 <a name="test"></a>
 #### Issues with the implementation of the tests 
@@ -195,6 +198,7 @@ Risks of inadequate tests will result to:
 ##### Revisit
 - 
 
+
 <a name="vm"></a>
 #### Loss of data due to Server or VM being shutdown 
 Risks of GCP server shutting down will result to:
@@ -206,6 +210,7 @@ Risks of GCP server shutting down will result to:
 - Ensure that I push an changes made to the source code to GitHub, ensuring that my code is always backed up
 ##### Revisit
 - 
+
 
 <a name="data"></a>
 #### Potential release of data (eg account info, private IP addresses or environment variables) when uploading 
