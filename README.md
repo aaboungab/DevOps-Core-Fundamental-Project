@@ -98,6 +98,10 @@ changes were needed to be made to the database as all functionalty requirements 
 <a name="ci"></a>
 ### CI Pipeline
 
+A CI pipeline was involved in the development and deployment of the project, a mock-up of this can be seen below.
+
+<img src="/Documentation/CI Pipeline.png" alt="CI" width="100%" height="100%"/>
+
 <a name="use_case"></a>
 ## Project Planning & User Stories 
 
