@@ -88,6 +88,10 @@ Below is shown ERD table for the project. My project will be connected to a GCP 
 details, allowing anyone to Create, Read, Update and Delete from the database. Relationship between tables is a one-to-many relationship as
 1 series can have many reviews and 1 review cannot have many series attached to it. 
 
+
+<img src="/Documentation/ERD.png" alt="ERD" width="75%" height="75%"/>
+
+
 The inital plan for the ERD was consistent throughout the projects lifecycle and the project was delievered with the ERD shown below. No 
 changes were needed to be made to the database as all functionalty requirements were met. 
 
@@ -99,6 +103,15 @@ changes were needed to be made to the database as all functionalty requirements 
 
 For the project a tool called Trello is being used as a planning tool to keep track of tasks and update what needed to be done or has been completed.
 Trello is a free and easy to use platform that creates Kanban boards. Below is a screenshot of the Trello board and a link to the Trello board:
+
+[Trello Board](https://trello.com/b/siBc2gmV/fundamental-qa-project)
+
+<img src="/Documentation/Trello Board.png" alt="Trello" width="75%" height="75%"/>
+
+### Use Case Overview
+
+<img src="/Documentation/Use case Overview.png" alt="Usecase" width="75%" height="75%"/>
+
 
 <a name=risks></a>
 ## Risk Assessment
