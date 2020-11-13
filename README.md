@@ -12,7 +12,6 @@
 - [Risk Assessment](#risks)
     - [Explanation](#risk-exp)
 - [Testing](#test_)
-    - [Unit testing](#utest)
 - [Deployment](#depl)
 - [Technologies used](#tech)
 - [Front end Design](#FE)
@@ -222,8 +221,9 @@ It is likely that I will be working on different VM machines, hence there will b
 
 
 <a name="test_"></a>
-## Testing 
-Testing has been done using pytest. The coverage report for the backend is __. 
+## Testing (Unit Testing)
+Testing of my web app has been done by using Pytest and Selenium. The pytest had a test coverage report of 85%. With Pytest I was able to test most functions of my web app
+<img src="/Documentation/PytestCov.png" alt="Usecase" width="100%" height="100%"/>
 
 
 <a name="depl"></a>
