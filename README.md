@@ -128,8 +128,8 @@ I have thought of a number of risks that my project may face and have categorise
 | Problems with the development of the project        | Medium        |  High        | [3 Click here](#dev)
 | Have insufficient GCP Credit   | Very Low     |    High | [4 Click here](#gcp)
 | Issues with the implementation of the tests        |  Medium     |    Medium       | [5 Click here](#test)
-| Loss of data due to Server or VM being shutdown   | Low     |    Medium | [4 Click here](#vm)
-| Potential release of data (eg account info, private IP addresses or environment variables) when uploading        |  Very Low     |    High       | [5 Click here](#data)
+| Loss of data due to Server or VM being shutdown   | Low     |    Medium | [6 Click here](#vm)
+| Potential release of data (eg account info, private IP addresses or environment variables) when uploading        |  Very Low     |    High       | [7 Click here](#data)
 
 <a name="risk-exp"></a>
 ### Risk Explanation
