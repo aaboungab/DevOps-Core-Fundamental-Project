@@ -135,6 +135,11 @@ Below are entailed a series of user stories according to the planned uses for th
 
 I have thought of a number of risks that my project may face and have categorised them below to analyse the risk, its impact, likelihood and the appropriate response to that risk. The risks can be seen as a combination of technical risks associate with the development side of the project and general risks that will directly or indirectly impact the project
 
+[Excel version](https://docs.google.com/spreadsheets/d/1PkbGO7We7VWNwiyrE6rUQE0_KDZOs-1CUOdsQAjmLcc/edit#gid=0)
+<img src="/Documentation/Risk Table.png" alt="CI" width="100%" height="100%"/>
+
+
+
 | Risks                            | Likelihood    | Impact       |    Explanation          |
 | -------------------------------- |:-------------:| :-----------:| -----------------------:|
 | Lack of clear planning           | Low           | High         | [1 Click here](#cplan)
@@ -156,9 +161,9 @@ Building of web app can get complex down the line as the code source increases.
 ##### Low Likelihood
 - Difficulty of structuring a project will still learning the fundamentals of programming and app development
 ##### Response 
-- Use of Jira to identify aim and be able to plan and track project progression
+- Use of Trello to identify aim and be able to plan and track project progression
 ##### Revisit
-- 
+- Use of Trello made project tracking really easy and made my general workflow much more efficient
 
 
 <a name="auto"></a>
@@ -171,7 +176,7 @@ Automation can save a lot of time and hussle if done right, however if not done 
 ##### Response 
 - Ensure automation learning through python is at a sufficient level to debug an issue I may face
 ##### Revisit
-- 
+- All Automation needs were development with no issues.
 
 
 <a name="dev"></a>
@@ -184,7 +189,7 @@ Development part of the project is the most critical stage, the risks of running
 ##### Response 
 - Solving problems as and when they take place. Ensure that I follow project plan to make tracing back steps easier in the case of an issue 
 ##### Revisit
-- 
+- With the use of the project tracking board and training material the development stage was done very vell. I did not face no major issues
 
 
 <a name="gcp"></a>
@@ -197,7 +202,7 @@ Running out of GCP credit for this project is very unlikely, however if I do the
 ##### Response 
 - I will ensure that all instances are stopped and only activated when needed to save compute resources
 ##### Revisit
-- 
+- At the end of each session I made sure any instances were stopped. GCP credit was not affected at all
 
 
 <a name="test"></a>
@@ -210,7 +215,7 @@ Risks of inadequate tests will result to:
 ##### Response 
 - Ensure Unit testing learning is at a sufficient level to solve any implementation issues that may arise
 ##### Revisit
-- 
+- Tests implementation was very successful with no issues taking place when I ran the unit tests
 
 
 <a name="vm"></a>
@@ -223,7 +228,7 @@ Risks of GCP server shutting down will result to:
 ##### Response 
 - Ensure that I push an changes made to the source code to GitHub, ensuring that my code is always backed up
 ##### Revisit
-- 
+- VM were not affected during the duration of the project
 
 
 <a name="data"></a>
@@ -236,7 +241,7 @@ It is likely that I will be working on different VM machines, hence there will b
 ##### Response 
 - Ensure that I do not make a sensitive information public on GitHub or elsewhere and always follow best practices
 ##### Revisit
--
+- All sensitive data was secured and was add to a gitignore file to follow best practices
 
 
 <a name="test_"></a>
