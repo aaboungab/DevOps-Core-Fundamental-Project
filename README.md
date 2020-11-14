@@ -90,7 +90,6 @@ details, allowing anyone to Create, Read, Update and Delete from the database. R
 1 series can have many reviews and 1 review cannot have many series attached to it. 
 
 
-<img src="/Documentation/ERD.png" alt="ERD" width="100%" height="100%"/>
 
 
 The inital plan for the ERD was consistent throughout the projects lifecycle and the project was delievered with the ERD shown below. No 
