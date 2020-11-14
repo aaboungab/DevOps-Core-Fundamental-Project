@@ -141,8 +141,13 @@ I have thought of a number of risks that my project may face and have categorise
 
 <a name="test_"></a>
 ## Testing (Unit Testing)
-Testing of my web app has been done by using Pytest and Selenium. The pytest had a test coverage report of 79%. With Pytest I was able to test most functions of my web app
+Testing of my web app has been done by using Pytest. When running pytest --cov term-missing on the applications directory the test coverage report of was 79%. The tests conducted on my app were to ensure that the user can access or view any of the apps pages. I also tested the functions for adding a series name, adding a review, updating and deleting series. With Pytest I was able to test most functions of my web app and understand what parts of my app that were not tested. 
 <img src="/Documentation/Pytest-Cov.png" alt="ERD" width="100%" height="100%"/>
+
+
+
+
+With unit testing I conducted tests which ensures all the pages/views can be accessed by the user. I also tests the functions for adding a game and a session to make sure the tables are related and working together. I also tested the update function to ensure that it is able to read and update the data. 
 
 <a name="depl"></a>
 ## Deployment
