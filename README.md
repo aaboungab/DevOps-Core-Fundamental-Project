@@ -141,7 +141,7 @@ I have thought of a number of risks that my project may face and have categorise
 
 <a name="test_"></a>
 ## Testing (Unit Testing)
-Testing of my web app has been done by using Pytest and Selenium. The pytest had a test coverage report of 85%. With Pytest I was able to test most functions of my web app
+Testing of my web app has been done by using Pytest and Selenium. The pytest had a test coverage report of 79%. With Pytest I was able to test most functions of my web app
 <img src="/Documentation/Pytest-Cov.png" alt="ERD" width="100%" height="100%"/>
 
 
