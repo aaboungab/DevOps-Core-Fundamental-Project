@@ -144,10 +144,11 @@ I have thought of a number of risks that my project may face and have categorise
 Testing of my web app has been done by using Pytest and Selenium. The pytest had a test coverage report of 79%. With Pytest I was able to test most functions of my web app
 <img src="/Documentation/Pytest-Cov.png" alt="ERD" width="100%" height="100%"/>
 
-
 <a name="depl"></a>
 ## Deployment
-INCOMPLETE
+The deployment and test stage for the web app were automated using Jenkins, a Continous integration server. Jenkins was installed into the GCP instance by firstly adding a port tcp:8080 to the firewall rules control, creating a deployment server. I then installed Jenkins on the GCP instance terminal as a user, with enhanced User admissions to run sudo commands enabling me to deploy and test my app on the deployment server. Jenkins 
+<img src="/Documentation/Jenkins.png" alt="CI" width="100%" height="100%"/>
+
 
 <a name="tech"></a>
 ### Technologies Used
