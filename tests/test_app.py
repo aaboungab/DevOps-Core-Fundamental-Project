@@ -59,7 +59,6 @@ class TestViews(TestBase):
         response = self.client.get(url_for('addReview', idNum=1))
         self.assertEqual(response.status_code, 200)
 
-
     def test_Reviewpage_get(self):
         response = self.client.get(url_for('Reviewpage', idNum=1))
         self.assertEqual(response.status_code, 200)
@@ -68,7 +67,7 @@ class TestViews(TestBase):
 class TestAdd(TestBase):
     def test_add_series(self):
         response = self.client.post(
-		url_for('add', idNum=2),
+		url_for('add', idNum=1),
 		data = dict(name='Death Note')
 	)
         self.assertIn(b'Death Note', response.data)
