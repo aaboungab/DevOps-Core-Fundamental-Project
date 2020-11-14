@@ -150,6 +150,8 @@ Testing of my web app has been done by using Pytest. When running pytest --cov t
 The deployment and test stage for the web app were automated using Jenkins, a Continous integration server. Jenkins was installed into the GCP instance by firstly adding a port tcp:8080 to the firewall rules control, creating a deployment server. I then installed Jenkins on the GCP instance terminal as a user, with enhanced User admissions to run sudo commands enabling me to deploy and test my app on the deployment server. Jenkins 
 <img src="/Documentation/Jenkins.png" alt="CI" width="100%" height="100%"/>
 
+I also deployed my web application in a production server using Gunicorn by running the below command. 
+<img src="/Documentation/Gunicorn.png" alt="CI" width="100%" height="100%"/>
 
 <a name="tech"></a>
 ### Technologies Used
