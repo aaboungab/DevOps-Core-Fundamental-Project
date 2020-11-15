@@ -1,9 +1,22 @@
 <html>
-
-	<body>
+	<body style="background-image: linear-gradient(#ffffff, #4e7a84);">
 	
-		<h1>Write a Series Review!</h1>
-<h2><a href='{{url_for('index')}}'>Home</a>  &nbsp;  <a href='{{url_for('add')}}'>Add a Series</a>  
+		<h1 style="
+border-bottom: 5px solid black;
+text-transform: capitalize;
+margin-left: 10px;
+margin-right: 0px;
+margin-top: 0px;
+margin-bottom: 0px;
+position: relative;
+font-size: xxx-large;">Write a Series Review!</h1>
+
+<h2 style="
+margin-left: 10px;
+margin-right: 0px;
+margin-top: 0px;
+margin-bottom: 0px;
+position: relative;"><a href='{{url_for('index')}}'>Home</a>  &nbsp;  <a href='{{url_for('add')}}'>Add a Series</a>  
 				<br>
 			{% block body_content %}
 			{% endblock body_content%}

@@ -3,22 +3,30 @@
 
 {% for series in all_series %}
 
-<h4>{{ series.name }}</h4>
+<h4 style="color: #211f1e;
+-webkit-transition: .5s;
+font-family: 'Muli', sans-serif;
+font-size: x-large;
+margin-left: 20px;">{{ series.name }}</h4>
 
 <form method= '' action='{{ url_for('update', idNum=series.id)}}'>
-	<button>Update</button>
+	<button style="box-shadow: 0 12px 16px 0 rgb(103 133 148 / 24%), 0 17px 50px 0 rgba(0,0,0,0.19);
+width: 100px;">Update</button>
 </form>
  
 <form method='' action=' {{ url_for('delete', idNum=series.id)}}'>
-	<button>Delete</button>
+	<button style="box-shadow: 0 12px 16px 0 rgb(103 133 148 / 24%), 0 17px 50px 0 rgba(0,0,0,0.19);
+width: 100px;">Delete</button>
 </form>
 
 <form method= '' action='{{ url_for('addReview',idNum=series.id)}}'>
-	<button>Add review</button>
+	<button style="box-shadow: 0 12px 16px 0 rgb(103 133 148 / 24%), 0 17px 50px 0 rgba(0,0,0,0.19);
+width: 100px;">Add review</button>
 </form>
 
 <form method= '' action='{{ url_for('Reviewpage',idNum=series.id)}}'>
-        <button>View reviews</button>
+        <button style="box-shadow: 0 12px 16px 0 rgb(103 133 148 / 24%), 0 17px 50px 0 rgba(0,0,0,0.19);
+width: 100px;">View reviews</button>
 </form>
 <br>
 

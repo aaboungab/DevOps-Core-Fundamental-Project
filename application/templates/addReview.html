@@ -1,11 +1,15 @@
 {% extends 'layout.html' %}
 {% block body_content %}
 
-<h2>Add your Review</h2>
+<h2 style="color: #211f1e;
+-webkit-transition: .5s;
+font-family: 'Muli', sans-serif;
+font-size: x-large;
+margin-left: 20px;">Add your Review</h2>
 <br>
     <form action='' method='POST'>
         {{ form.hidden_tag() }}
-        {{form.desc.label}} {{ form.desc }} <br>
+        {{form.desc.label}} {{ form.desc(id="reviewbox") }} <br>
         {% if form.desc.errors %}
             {% for error in form.desc.errors %}
                 {{ error }}<br>
