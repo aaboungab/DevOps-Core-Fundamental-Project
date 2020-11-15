@@ -172,16 +172,16 @@ I have thought of a number of risks that my project may face and have categorise
 <a name="home"></a>
 ### Home Page
 Clear home page consists of an Add series button and home button to redirect back to the homepage. 
-<img src="/Documentation/home.png" alt="Usecase" width="100%" height="100%"/>
+<img src="/Documentation/Home.png" alt="" width="100%" height="100%"/>
 
 
 <a name="addSN"></a>
 ### Add Series Name Page
 Clicking on the Add a Series button you will be redirect to the Add series page. 
-<img src="/Documentation/Add a Series.png" alt="Usecase" width="100%" height="100%"/>
+<img src="/Documentation/AddSeries.png" alt="" width="100%" height="100%"/>
 
 #### Home page after Adding series name
-<img src="/Documentation/home-AddedSeries.png" alt="Usecase" width="100%" height="100%"/>
+<img src="/Documentation/AddSeriesHome.png" alt="" width="100%" height="100%"/>
 
 
 <a name="revS"></a>
@@ -189,19 +189,18 @@ Clicking on the Add a Series button you will be redirect to the Add series page.
 #### Add review
 Add a review by clicking on the Add review button on the home page. That will then redirect you to the add review page:
 
-<img src="/Documentation/Add a review.png" alt="Usecase" width="100%" height="100%"/>
+<img src="/Documentation/AddReview.png" alt="" width="100%" height="100%"/>
 
 After adding your review you will be automatically redirected to the Review page where you can view your review and other reviews on the specific series:
 
-<img src="/Documentation/viewreviewpage.png" alt="Usecase" width="100%" height="100%"/>
-
+<img src="/Documentation/ReviewPage.png" alt="" width="100%" height="100%"/>
 
 
 <a name="virev"></a>
 ### View Review Page
 You can veiw reviews of each series by clicing  the view review button on the homepage:
 
-<img src="/Documentation/viewreview button.png" alt="Usecase" width="100%" height="100%"/>
+<img src="/Documentation/viewreviewbutton.png" alt="" width="100%" height="100%"/>
 
 
 <a name="improve"></a>
