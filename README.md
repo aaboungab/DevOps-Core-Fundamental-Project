@@ -9,13 +9,13 @@
     - [Project Approach](#approach)
 - [Architecture](#arch)
     - [Entity Relationship Diagrams](#erd)
-    - [CI Pipeline](#ci)
+- [CI Pipeline](#ci)
 - [Project Planning & User Stories](#use_case)
-- [Risk Assessment](#risks)
-    - [Explanation](#risk-exp)
 - [Testing](#test_)
 - [Deployment](#depl)
 - [Technologies used](#tech)
+- [Risk Assessment](#risks)
+    - [Explanation](#risk-exp)
 - [Front end Design](#FE)
     - [Page: Home](#home)
     - [Page: Add Series name](#addSN)
@@ -97,14 +97,14 @@ The inital plan for the ERD was consistent throughout the projects lifecycle and
 changes were needed to be made to the database as all functionalty requirements were met. 
 
 <a name="ci"></a>
-### CI Pipeline
+## CI Pipeline
 
 A CI pipeline was involved in the development and deployment of the project, a mock-up of this can be seen below.
 
 <img src="/Documentation/CI Pipeline.png" alt="CI" width="100%" height="100%"/>
 
 <a name="use_case"></a>
-## Project Planning & User Stories 
+### Project Planning & User Stories 
 
 For the project a tool called Trello is being used as a planning tool to keep track of tasks and update what needed to be done or has been completed.
 Trello is a free and easy to use platform that creates Kanban boards. Below is a screenshot of the Trello board and a link to the Trello board:
@@ -130,15 +130,6 @@ Below are entailed a series of user stories according to the planned uses for th
 | COULD | As a user, I want to access the web on a mobile devices|
 
 
-<a name=risks></a>
-## Risk Assessment
-
-I have thought of a number of risks that my project may face and have categorised them below to analyse the risk, its impact, likelihood and the appropriate response to that risk. The risks can be seen as a combination of technical risks associate with the development side of the project and general risks that will directly or indirectly impact the project
-
-[Excel version](https://docs.google.com/spreadsheets/d/1PkbGO7We7VWNwiyrE6rUQE0_KDZOs-1CUOdsQAjmLcc/edit#gid=0)
-<img src="/Documentation/Risk Table.png" alt="CI" width="100%" height="100%"/>
-
-
 <a name="test_"></a>
 ## Testing (Unit Testing)
 Testing of my web app has been done by using Pytest. When running pytest --cov term-missing on the applications directory the test coverage report of was 79%. The tests conducted on my app were to ensure that the user can access or view any of the apps pages. I also tested the functions for adding a series name, adding a review, updating and deleting series. With Pytest I was able to test most functions of my web app and understand what parts of my app that were not tested. 
@@ -152,6 +143,15 @@ The deployment and test stage for the web app were automated using Jenkins, a Co
 
 I also deployed my web application in a production server using Gunicorn by running the below command. 
 <img src="/Documentation/Gunicorn.png" alt="CI" width="100%" height="100%"/>
+
+<a name=risks></a>
+## Risk Assessment
+
+I have thought of a number of risks that my project may face and have categorised them below to analyse the risk, its impact, likelihood and the appropriate response to that risk. The risks can be seen as a combination of technical risks associate with the development side of the project and general risks that will directly or indirectly impact the project
+
+[Excel version](https://docs.google.com/spreadsheets/d/1PkbGO7We7VWNwiyrE6rUQE0_KDZOs-1CUOdsQAjmLcc/edit#gid=0)
+<img src="/Documentation/Risk Table.png" alt="CI" width="100%" height="100%"/>
+
 
 <a name="tech"></a>
 ### Technologies Used
