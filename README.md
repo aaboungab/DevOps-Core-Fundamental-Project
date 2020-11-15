@@ -1,7 +1,7 @@
 # Series Review app
 # Author
 ## Anas Aboungab
-
+[Fundamental Proejct Presentation](https://docs.google.com/presentation/d/1QXz-Samq12r3TlFr8RmY36eITuOb-Geycl6qGiCVQQY/edit#slide=id.ga20cedc313_0_161)
 ## Contents
 - [Brief](#brief)
     - [Objective](#obj)
