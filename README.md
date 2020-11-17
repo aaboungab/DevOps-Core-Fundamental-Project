@@ -128,6 +128,7 @@ Below are entailed a series of user stories according to the planned uses for th
 | SHOULD | As a user I want to be able to update my reviews on the app |
 | SHOULD | As a user I want to delete my reviews on the app |
 | COULD | As a user, I want to access the web on a mobile devices|
+| Won't Have | As a user, I want to be able to rate other reviews on the app|
 
 
 <a name="test_"></a>
@@ -160,7 +161,7 @@ I have thought of a number of risks that my project may face and have categorise
 * Framework: Flask
 * Deployment: Gunicorn
 * CI Server: Jenkins
-* Test Reporting: Pytest, Selenium
+* Test Reporting: Pytest
 * VCS: [Git](https://github.com/aaboungab)
 * Project Tracking: [Trello](https://trello.com/b/siBc2gmV/fundamental-qa-project)
 * Live Environment: GCP
