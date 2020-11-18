@@ -3,9 +3,7 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip3 install -r requirements.txt 
 COPY . .
-RUN . scripts/key.sh
-ENV 'DB_URI'=${DB_URI}
-ENV 'SECRET_KEY'=${SECRET_KEY}
-RUN python create.py
+ENV 'DB_URI'=getenv('DB_URI')
+ENV 'SECRET_KEY'=getenv('SECRET_KEY')
 EXPOSE 5000
 ENTRYPOINT ["python", "app.py"]
